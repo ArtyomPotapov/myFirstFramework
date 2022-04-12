@@ -11,6 +11,9 @@
 		50A155AB2805D26500DF8311 /* MyFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A155A02805D26400DF8311 /* MyFramework.framework */; };
 		50A155B02805D26500DF8311 /* MyFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A155AF2805D26500DF8311 /* MyFrameworkTests.swift */; };
 		50A155B12805D26500DF8311 /* MyFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 50A155A32805D26400DF8311 /* MyFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50A155BC2805D37E00DF8311 /* MyFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A155BA2805D37E00DF8311 /* MyFirstViewController.swift */; };
+		50A155BD2805D37E00DF8311 /* MyFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A155BB2805D37E00DF8311 /* MyFirstViewController.xib */; };
+		50A155BF2805D3BF00DF8311 /* MyFirstModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A155BE2805D3BF00DF8311 /* MyFirstModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		50A155A42805D26400DF8311 /* MyFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = MyFramework.docc; sourceTree = "<group>"; };
 		50A155AA2805D26500DF8311 /* MyFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50A155AF2805D26500DF8311 /* MyFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFrameworkTests.swift; sourceTree = "<group>"; };
+		50A155BA2805D37E00DF8311 /* MyFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstViewController.swift; sourceTree = "<group>"; };
+		50A155BB2805D37E00DF8311 /* MyFirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyFirstViewController.xib; sourceTree = "<group>"; };
+		50A155BE2805D3BF00DF8311 /* MyFirstModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,9 @@
 		50A155962805D26400DF8311 = {
 			isa = PBXGroup;
 			children = (
+				50A155BA2805D37E00DF8311 /* MyFirstViewController.swift */,
+				50A155BB2805D37E00DF8311 /* MyFirstViewController.xib */,
+				50A155BE2805D3BF00DF8311 /* MyFirstModel.swift */,
 				50A155A22805D26400DF8311 /* MyFramework */,
 				50A155AE2805D26500DF8311 /* MyFrameworkTests */,
 				50A155A12805D26400DF8311 /* Products */,
@@ -177,6 +186,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50A155BD2805D37E00DF8311 /* MyFirstViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +205,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				50A155A52805D26400DF8311 /* MyFramework.docc in Sources */,
+				50A155BC2805D37E00DF8311 /* MyFirstViewController.swift in Sources */,
+				50A155BF2805D3BF00DF8311 /* MyFirstModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +363,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,6 +391,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -396,6 +410,7 @@
 		50A155B82805D26500DF8311 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -411,6 +426,7 @@
 		50A155B92805D26500DF8311 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
